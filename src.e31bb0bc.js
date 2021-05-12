@@ -204,9 +204,7 @@ var refs = {
   dateValue: document.querySelector('[data-value="days"]'),
   hoursValue: document.querySelector('[data-value="hours"]'),
   minsValue: document.querySelector('[data-value="mins"]'),
-  secsValue: document.querySelector('[data-value="secs"]'),
-  startBtn: document.querySelector('button[data-action-start]'),
-  stopBtn: document.querySelector('button[data-action-stop]')
+  secsValue: document.querySelector('[data-value="secs"]')
 };
 
 var countdownTimer = /*#__PURE__*/function () {
@@ -312,7 +310,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50835" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50922" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
